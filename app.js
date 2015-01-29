@@ -19,18 +19,31 @@
 			price: 2.9523,
 			description: 'best gem ever by JL',
 			canPurchase: true,
+			images: [{
+				full:'./photo/gem0.jpg',
+				half:'./photo/gem1.jpg',
+			}],
 		},
 		{
 			name: 'Red Gem',
 			price: 4,
 			description: 'best gem ever by JL',
 			canPurchase: true,
+			images: [{
+				full:'./photo/gem0.jpg',
+				half:'./photo/gem1.jpg',
+			}],
+			
 		},
 		{
 			name: 'Blue Gem',
 			price: 2.95,
 			description: 'best gem ever by JL',
 			canPurchase: true,
+			images: [{
+				full:'./photo/gem0.jpg',
+				half:'./photo/gem1.jpg',
+			}],
 		},
 
 
