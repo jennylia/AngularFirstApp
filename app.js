@@ -3,13 +3,13 @@
 		var app = angular.module('store', []); 
 		app.controller('StoreController', function(){
 
-			this.product = gems[0];
+			this.products = gems;
 
 		});
 
 		app.controller('InventoryController', function(){
 			this.inventory = inventory;
-			this.firstItem = gems[1];
+			this.firstItem = gems;
 		})
 
 
@@ -22,6 +22,12 @@
 		},
 		{
 			name: 'Red Gem',
+			price: 2.95,
+			description: 'best gem ever by JL',
+			canPurchase: true,
+		},
+		{
+			name: 'Blue Gem',
 			price: 2.95,
 			description: 'best gem ever by JL',
 			canPurchase: true,

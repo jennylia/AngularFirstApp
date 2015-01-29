@@ -5,22 +5,24 @@
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </head>
-  <body>
-  	<div ng-controller="StoreController as store">
-    	<h1> {{store.product.name}} </h1>
-    	<h2> {{store.product.price}}</h2>
-    	<p> {{store.product.description}}</p>
-   		<button ng-show="store.product.canPurchase">Add to cart!</button>
+  <body ng-controller="StoreController as store">
+  	<div ng-repeat="i in store.products">
+    	<h1> {{i.name}} </h1>
+    	<h2> {{i.price}}</h2>
+    	<p> {{i.description}}</p>
+   		<button ng-show="i.canPurchase">Add to cart!</button>
 
 	</div>
-	<div ng-controller="InventoryController as inv">
+
+
+	<!-- <div ng-controller="InventoryController as inv">
 		<h1>Size of the inventory: {{inv.inventory.size}}</h1>
 		<h3>Has the item: {{inv.firstItem.name}}</h3>
 		<div ng-show="inv.firstItem.canPurchase">Add to cart!</div>
 
 
 	</div>
-
+ -->
 
 
   </body>
