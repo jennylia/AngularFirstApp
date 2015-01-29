@@ -22,7 +22,11 @@
 			images: [{
 				full:'./photo/gem0.jpg',
 				half:'./photo/gem1.jpg',
-			}],
+			},
+			{
+				full:'./photo/gem1.jpg',
+				half:'./photo/gem1.jpg',
+			},],
 		},
 		{
 			name: 'Red Gem',
@@ -32,7 +36,11 @@
 			images: [{
 				full:'./photo/gem0.jpg',
 				half:'./photo/gem1.jpg',
-			}],
+			},
+			{
+				full:'./photo/gem1.jpg',
+				half:'./photo/gem1.jpg',
+			},],
 			
 		},
 		{
@@ -43,7 +51,11 @@
 			images: [{
 				full:'./photo/gem0.jpg',
 				half:'./photo/gem1.jpg',
-			}],
+			},
+			{
+				full:'./photo/gem1.jpg',
+				half:'./photo/gem1.jpg',
+			},],
 		},
 
 
