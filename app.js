@@ -17,6 +17,7 @@
 			name: 'Dedecaheron-JL',
 			price: 2.95,
 			description: 'best gem ever by JL',
+			canPurchase: true,
 		}
 
 		var inventory = {
