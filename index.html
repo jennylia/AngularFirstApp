@@ -32,16 +32,21 @@
 				<a href ng-click="panel.setTab(2)">Sup </a></li>
 			<li ng-class ="{active: panel.checkTab(3)}">
 				<a href ng-click="panel.setTab(3)">Sup </a></li>
-
+				<p ng-controller="StoreController as store">
 		</ul>
-			{{tab}}
-			{{store.products[tab].images[0].full}}
-   			<!-- <img width="50" height="50" ng-src="store.products[tab].images[0].full" ></img> -->
 		<p>
+			{{store.products[panel.tab]}}
 			Filler</br>
 			Filler </br>
 			Filler</br>
+
+			<img width="50" height="50" ng-src="{{store.products[0].images[0].full}}" ></img>
 		</p>
+
+			{{tab}}
+			{{store.products[tab].images[0].full}}
+   			<!-- <img width="50" height="50" ng-src="store.products[tab].images[0].full" ></img> -->
+		
 
 	</section>
 
