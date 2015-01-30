@@ -13,11 +13,11 @@
 
 			this.setTab = function (setTab){
 				this.tab = setTab;
-			}
+			};
 
 			this.checkTab = function(i){
 				return (this.tab === i);
-			}
+			};
 
 		});
 

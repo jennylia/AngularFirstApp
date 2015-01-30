@@ -34,6 +34,11 @@
 				<a href ng-click="panel.setTab(3)">Sup </a></li>
 				<p ng-controller="StoreController as store">
 		</ul>
+
+		
+
+			
+
 		<p>
 			{{store.products[panel.tab]}}
 			Filler</br>
@@ -49,6 +54,16 @@
 		
 
 	</section>
+
+	<blockquote ng-controller="StoreController as store">
+		{{store.products[1]}
+
+		just wanted to say
+	</blockquote>
+	<div ng-controller="StoreController as store">
+		{{store.products[1]}
+
+	</div>
 
   </body>
 </html>
