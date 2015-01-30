@@ -7,6 +7,21 @@
 
 		});
 
+		app.controller('PanelController', function(){
+
+			this.tab = 1;
+
+			this.setTab = function (setTab){
+				this.tab = setTab;
+			}
+
+			this.checkTab = function(i){
+				return (this.tab === i);
+			}
+
+		});
+
+
 		app.controller('InventoryController', function(){
 			this.inventory = inventory;
 			this.firstItem = gems;
