@@ -27,13 +27,13 @@
 	<section ng-controller="PanelController as panel">
 		<ul class ="nav nav-pills">
 			<li ng-class ="{active: panel.checkTab(1)}">
-				<a href ng-click="panel.setTab(1)">Sup </a></li>
+				<a href ng-click="panel.setTab(1)">Description </a></li>
 			<li ng-class ="{active: panel.checkTab(2)}">
 				<a href ng-click="panel.setTab(2)">Sup </a></li>
 			<li ng-class ="{active: panel.checkTab(3)}">
-				<a href ng-click="panel.setTab(3)">Sup </a></li>
-				<p ng-controller="StoreController as store">
+				<a href ng-click="panel.setTab(3)">Review </a></li>
 		</ul>
+
 
 		
 
@@ -51,19 +51,46 @@
 			{{tab}}
 			{{store.products[tab].images[0].full}}
    			<!-- <img width="50" height="50" ng-src="store.products[tab].images[0].full" ></img> -->
+
+
+
+			
 		
 
 	</section>
 
-	<blockquote ng-controller="StoreController as store">
-		{{store.products[1]}
-
-		just wanted to say
-	</blockquote>
 	<div ng-controller="StoreController as store">
-		{{store.products[1]}
-
+		<div class="panel" >
+				<h3>Reviews</h3>
+		</div>
+		<blockquote ng-repeat="i in store.products">
+			<!-- {{i.reviews[0].stars}} -->
+			<p ng-repeat="j in i.reviews">Stars Received: {{j.stars}}</p>
+		</blockquote>
 	</div>
+
+	<form name="reviewForm">
+
+		<blockquote>
+			<b> Stars: {{review.stars}} </b></br>
+			<b> Reviews: {{review.body}}</b></br>
+			<cite>by: {{review.author}}</b>
+		</blockquote>
+
+		Stars: <select ng-model="review.stars">
+			<option value="1">1 star</option>
+			<option value="2">2 stars</option>
+		</select></br>
+		Review: <textarea ng-model="review.body"></textarea></br>
+		<label> by: </label>
+		<input ng-model="review.author" type="email" />
+		<input type="submit" value="Submit"/>
+	</br>
+		<label>Test some input types</label>
+		<input type="radio" value="red"/>
+		<input type="checkbox" value="terms"/>
+
+	</form>
 
   </body>
 </html>

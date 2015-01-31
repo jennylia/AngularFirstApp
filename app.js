@@ -42,6 +42,18 @@
 				full:'./photo/gem1.jpg',
 				half:'./photo/gem1.jpg',
 			},],
+			reviews:[
+			{
+				stars: 5,
+				body: "a good product",
+				author: "jenny@jenny.com"
+			},
+			{
+				stars: 4,
+				body: "a good product",
+				author: "d@jenny.com"
+			},
+			],
 		},
 		{
 			name: 'Red Gem',
